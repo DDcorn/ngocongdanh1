@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+body{  
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px; margin:0;
+	color: #666;
+}
+a{ 
+	color: #666;
+	text-decoration: none;
+}
+a:hover{color: #333}
+p{ line-height: 1.5rem}
+h1,h2,h3 { margin-bottom: 0; color: #000; display: block}
+h1{ font-size: 3rem}
+nav{ padding: 15px 0; border-bottom: 1px dashed #ddd}
+section{ 
+	padding: 25px 0;
+	border-bottom: 1px solid #ddd
+}
+/*---- style hiệu ứng chạy tràn màu khi hover---*/
+.abtn{ position: relative }
+.btn{ 
+	border: 2px solid #333; padding: 5px 20px; 
+	color: #333; position: relative; 
+	overflow: hidden; display: inline-block;
+	padding-right: 30px
+}
+.inside{
+	position: absolute; left: 0; bottom: 0; 
+	width: 0%; height: 100%; background: #000; 
+	transition: all 0.5s; z-index: -1; transform: rotate(45deg)
+}
+.btn:hover{
+	color: #fff; border-color:#eee; align-items: center 
+}
+.btn:hover >.inside{ 
+	width: 300%; height: 450%; left: -150%
+}
+
+/*----------------------baner-----------------*/
+
+.item-dm{
+	position: relative;
+}
+.item-detail{
+	position: absolute;
+	top: 35%;
+	left: 5%;
+	color: #fff;
+	font-size: 20px;
+}
+.item-detail h1{
+	color: #fff;
+	font-size: 8vh;
+}
+.btn-detail{
+	border: 1px solid #fff;
+	padding: 10px 15px;
+	color: #fff;
+}
+.btn-detail:hover{
+	background: #ddd;
+	color: #333;
+	
+}
+/*---------------------banner nho----------------------*/
+
+
+.item-detail-1{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 25%;
+	color: #fff;
+	left: 0;
+}
+.item-detail-1 h2, .item-detail-hover-1 h2{
+	color: #fff;
+	font-size: 30px;
+}
+.item-detail-hover-1{
+	background: #000;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	color: #fff;
+	padding: 10%;
+	opacity: 0;
+	transition: all 0.8s;
+	transform: scale(0)rotate(0);
+}
+.item-dm:hover >.item-detail-hover-1{
+	opacity: 1;
+	transform: scale(1)rotate(360deg);
+}
+.porduct-name{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0 10px 0;
+}
+.porduct-name h3{
+	margin-top: 0;
+	font-size: 24px;
+}
+.porduct-name i{
+	color: #D06508;
+	margin: 2px;
+}
+.gia-tien{
+	color: #5C5C5C;
+	font-size: 24px;
+}
+.porduct{
+	position: relative;
+}
+.porduct .i-shopping{
+	position: absolute;
+	left: 0; top: 72%; width: 100%;
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	transition: all 0.8s;
+}
+.porduct .i-shopping .outline{
+	background: #ddd;
+	margin: 10px;
+	padding: 10px;
+}
+.porduct:hover >.i-shopping{
+	opacity: 1;
+	top: 63%;
+}
+.test-after:before{
+	margin-right: 10px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f007";
+}
+footer{
+	min-height: 300px;
+	padding: 50px 0;
+	color: #fff;
+	background: #333;
+}
+main{
+	min-height: 800px;
+}
+.tieu-de-trang{
+	background: url("../images/about-us-page-heading.jpg") no-repeat center top;
+	min-height: 500px;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tieu-de-trang h1{color: #fff}
+
+
+

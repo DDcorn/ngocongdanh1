@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+*{ box-sizing:border-box}
+.img-100{width: 100%; height: auto}
+.container{ width: 80%; margin: auto}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] { 
+  padding: 15px;
+}
+.row{ display: flex; flex-wrap: wrap;}
+
+
+/*--------------------spacing style-------------*/
+
+
+
+.mt-0{ margin-top: 0px}
+.mt-5{ margin-top: 5px}
+.mt-10{ margin-top: 10px}
+.mt-20{ margin-top: 20px}
+.mt-50{ margin-top: 50px}
+.mb-10{ margin-bottom: 10px}
+.mb-20{ margin-bottom: 20px}
+.p-0{ padding: 0px}
+.mx-auto{ margin-left: auto; margin-right: auto}
+.d-block{ display:block}
+.d-flex{ display: flex; flex-wrap: wrap}
+.justify-between{ justify-content: space-between}
+.justify-center{ justify-content: center}
+.align-item-stretch{ align-items: stretch}
+.align-self-stretch{ align-self: stretch}
+.align-self-center{ align-self: center}
+.row-reverse{ flex-direction: row-reverse}
+.align-middle {vertical-align: middle}
+
+
+
+
+/*-------------- color style -------------------*/
+
+.bg-primary{ background-color: #7C25E7}
+.bg-secondary{ background-color: #eee}
+.text-primary{color: #378600}
+.text-light{color: #fff}
+.text-dark{color: #333}
+.shadow{ box-shadow: 0 2px 5px #ddd}
+.text-center{ text-align: center}
+.text-left{ text-align: left}
+.text-right{ text-align: right}
+.btn-outline{
+	font-size: 0.9rem; border: 2px solid #ddd;
+	padding: 10px 20px; color: #eee; 
+	cursor: pointer 
+}
+.btn-outline:hover{	background: #ddd; color: #666}
+
+/*-----------------------menu--------------------*/
+
+
+
+.menu ul ul{ 
+	position: absolute;
+	transition: all 0.5s;
+	background: #eee; 
+	flex-direction: column;  
+	z-index: 9999;
+	box-shadow: 0 3px 5px #333;
+	top: 200%; opacity: 0; visibility: hidden;
+}
+.munu ul ul li{border-bottom: 1px dotted #555}
+.menu ul ul li a{ padding: 10px 15px; margin: 0; border-bottom: 1px dotted #666}
+.menu ul ul li a:hover{padding: 10px 20px;}
+.menu ul li{position: relative}
+.menu ul{
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+.menu ul li a{
+	padding: 10px 35px;
+	display: block;
+	transition: all 0.3s;
+	font-size: 20px;
+}
+.menu ul li a:hover{
+	color: #B5B5B5;
+}
+.menu ul li:hover >ul{
+	opacity: 1;
+	top: 100%;
+	visibility: visible;
+}
+
+
+
